@@ -31,16 +31,16 @@ ul {
 
 /* Navigation */
 .nav-main {
-  font-size: 17px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
   padding: 20px 0;
 }
 
 .nav-brand {
-  width: 50px;
+  width: 130px;
 }
 
 /* Navbar Left */
@@ -56,6 +56,11 @@ ul {
   padding: 2px;
 }
 
+.nav-main ul li ul {
+  display: none;
+  padding: 2px;
+}
+
 .nav-main ul li a:hover {
   border-bottom: 2px solid #fff;
 }
@@ -63,6 +68,18 @@ ul {
 .nav-main ul.nav-menu {
   flex: 1;
   margin-left: 20px;
+}
+
+.menu-vertical{
+  display: none;
+  position: absolute;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.nav-menu li:hover .menu-vertical{
+display: block;
 }
 
 hr {
@@ -78,6 +95,8 @@ hr {
   z-index: 2;
   display: none;
 }
+
+
 
 /* SHOWCASE */
 
@@ -245,7 +264,7 @@ hr {
   }
 
   .nav-main ul.nav-menu {
-    display: block;
+    display: relative;
     position: absolute;
     top: 0;
     left: 0;
@@ -265,10 +284,12 @@ hr {
     font-size: 14px;
   }
   .nav-main ul.nav-menu li:last-child {
+    
     border-bottom: 0;
   }
 
   .nav-main ul.nav-menu.show {
+    
     transform: translateX(-20px);
   }
 
@@ -308,3 +329,6 @@ hr {
     text-align: center;
   }
 }
+
+
+

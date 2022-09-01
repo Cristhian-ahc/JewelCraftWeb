@@ -164,6 +164,17 @@ hr {
   display: inline-block;
   font-weight: bold;
 }
+/*fantasmas*/
+
+
+.fantasma {
+  display: block;
+  max-width: 10;
+  max-height: 10;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /* CARDS BANNER ONE */
 .cards-banner-one {
